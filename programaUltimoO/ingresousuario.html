@@ -1,0 +1,88 @@
+﻿<html>
+<head>
+<title>Inventario-CFS Metalminero</title>
+<link rel="StyleSheet" href="miestilo.css" type="text/css">
+<link rel="stylesheet" href="css/azul.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/ddaccordion.js">
+/***********************************************
+* Accordion Content script- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* Visit http://www.dynamicDrive.com for hundreds of DHTML scripts
+* This notice must stay intact for legal use
+***********************************************/
+</script>
+<script type="text/javascript" src="js/java.js"></script>
+<!-- para menú vertical desplegable "FIN" -->
+<SCRIPT src="js/top.js" type=text/javascript></SCRIPT>
+
+<script type="text/javascript" src="js/hora.js"></script>
+</head>
+<body >
+<div id="contenedor">
+<div id="top">
+  <div id="envoltura">
+  <div id="cabecera">
+	<div id="sj">
+       
+       	  <p class="color_ye" align="center">
+		  <script language="javascript"><!--
+new LiveClock('Verdana','2','CDBF1E',' ',' ','','110','0','1','0','0','+1');
+//--></script></p>
+<!--/sj-->
+</div>
+<!--/cabecera-->  
+</div>
+<!--/envoltura-->
+</div>
+<div id="envoltura">
+<div id="principal">
+<div id="cabeceras1"></div>
+<div id="linea">
+<?php 
+require('barra.php');
+?>
+</div>
+        
+       
+<div id="columna3" align="center">
+
+
+</br></br>
+<form name="usuario" method="post" action="index2.php">
+<table align="center" width="200" style="margin-left:0;" border="1">
+	<tr>
+		<th colspan="2" style=" background-image:url(imagenes/Sin_titulo.png); height:40;" ><font color="#FFFFFF" size="1em">Iniciar Sesión</font></th>
+	</tr>
+	<tr>
+		<td ><font>Usuario: </font></td>
+		<td><input name="usuario" type="text"  size="15" maxlength="100"></td>
+	</tr>
+	<tr>
+		<td><font>contrase&ntilde;a: </font></td>
+		<td><input  type="password" name="clave" maxlength="50" size="15"></td>
+
+	</tr>
+	</br>
+	<tr>
+		<td colspan="2" align="center"><input type="submit" name="enviar" value="Ingresar"/>
+		<input type="reset" name="cancelar" value="Cancelar"/> 
+        <br>
+		<a href="recuperarcontrasena3.php" style="color:red;"><h1 style="font-size: 0.7em">¿Olvido su Contraseña?</h1></a>
+		
+	</tr>
+</table>
+</form>
+</div>
+
+
+<div id="pie" align="center">
+Copyright © 2013 Derechos Reservados - Diseñado por: Rodriguez Juan, Tapias Juan, Mendoza Leonardo.
+</div>
+</div>
+</div>
+<div id="top2"></div>
+</div>
+</div>
+
+</body>
+</html>

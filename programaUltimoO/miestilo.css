@@ -1,0 +1,289 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+body {
+margin:0 auto;
+text-align:center;
+font-size:12px; font-family:Arial,Helvetica,sans-serif; 
+background-image:url(imagenes/fondo1.jpg);
+}
+
+#sj{
+	position: absolute;
+	left: 15px;
+	top: 0px;
+	top:10px\9;
+	*top:10px;
+	_top:10px;
+	margin-top:8px;
+	}
+;
+
+#contenedor{
+	background:url(imagenes/fondo1.jpg);
+width: 100%;
+height:200%;
+}
+#top{
+	background:url(imagenes/top.jpg) no-repeat center top;
+}
+#top2{
+	background:url(imagenes/top2.jpg) no-repeat center top;
+	padding-top:22px;
+}
+
+#envoltura{
+	margin:0 auto; width:1105px; text-align:left;
+	}
+#cabecera
+{
+	
+height:80px;
+position: relative;
+
+}
+#principal{
+height: 120%;
+overflow: hidden;
+padding-bottom: 100px;
+
+}
+#cabeceras{
+	background:url(imagenes/cabecera1.jpg) center top;
+	padding-top:16px;
+	height:75px;
+	width: 1098px;
+
+	}
+#cabeceras1{
+	background:url(imagenes/cabecera.jpg) no-repeat center top;
+	padding-top:16px;
+	height:230px;
+	width:1098px;
+
+	}
+#linea
+{
+    background-image:url(imagenes/Sin_titulo.png);
+	width: 1098px;
+	height: 30px;
+	padding-top: 1px;
+}
+#lineas
+{
+    background-image:url(imagenes/Sin_titulo.png);
+	width: 100%;
+	height: 25px;
+	padding-top: 1px;
+}
+#columna1
+{
+float:left;
+width: 240px; padding-left: 10px;
+ _display:inline; _overflow:hidden;
+  background:url(imagenes/fondo.gif);
+
+}
+#columna2
+{
+  float:right;
+  width:852px;
+  margin-right:1px;
+}		
+#titulo{
+	background:url(imagenes/Titulo.png);
+	width:846px;
+	height:34px;
+	color:#FFF;
+	font-size:20px;
+	float:left;
+	}		
+#fondo{
+	background:url(imagenes/.jpg);
+	height:605px;
+	width:845px;
+	float:left;
+	}				
+#columna3
+{
+  width:1110px;
+  height:408px;
+
+}
+#pie {
+  padding:1px;
+  border:1px solid #000;
+  color:#fff;
+background-image:url(imagenes/Sin_titulo.png);
+  clear:left;
+  height:25px;
+}
+
+font{
+font: bold 16px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+
+}
+
+p{
+font-family:Arial;
+font-size:16;
+color:#000000;
+}
+
+a:link{
+  color:#000000;
+}
+a:visited{
+  color:#ffffff;
+}
+a:hover{
+  background-color:#F78181;
+  color:#fffff;
+}
+
+a:active{
+  background-color:#ff0000;
+  color:#ffff00;
+}
+
+table{
+  font-family:arial;
+  font-size:1,3cm;
+  background-image:url(imagenes/Sint%C3%ADtulo.jpg);
+  border:1px solid #000;
+}
+
+
+#menu ul { 
+  border-top: solid 0px #fff;
+  list-style-type: none;
+  margin-left:2;
+  font-family:Comic Sans MS;
+  font-size:1,3cm;
+  width: 150px;
+}
+
+#menu ul li a {
+display: block;
+text-decoration: none;
+color: #000000;
+background-color: #CACACA;
+background-image:url(imagenes/monumento1.jpg);
+border: solid 1px #fff;
+padding: 8px 8px 9px;
+}   
+#cherry{
+	background:url(imagenes/cuadro.png) no-repeat; 
+	height: 155px; 
+	padding: 37px 30px 0 42px;
+	margin-right:2px;
+	}
+	
+#menu{
+	background-image:url(imagenes/ventaja.jpg); background-repeat:no-repeat; color:#FFF; width:236px;
+	padding-top:10px;
+	
+	}
+body, div, h1, h2, h3, h4, h5, h6, blockquote, fieldset, form, center, input, button, textarea{padding:0;margin:0;}
+fieldset, img { border: 0; }
+button,input,select,textarea{ font-size:12px;font-family:Verdana,Arial,Helvetica,sans-serif}
+h1, h2, h3, h4, h5, h6 {font-size: 100%; }
+.color_ye { color: #fef189;}
+
+#usuario{
+		margin: 0;
+padding: 0;
+width: 236px;
+ /*border: 1px solid #804000;*/
+border-bottom-width: 0;
+		}
+#usuario  a.menuitem{
+	/*background:  repeat-x bottom left;*/
+	background:url(imagenes/usuario.png); repeat-x bottom left;
+font: bold 14px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: black;
+display: block;
+position: relative; /*To help in the anchoring of the ".statusicon" icon image		*/
+width: auto;
+padding: 5px 0;
+padding-left: 10px;
+text-decoration: none;
+background-color:#cacaca;
+margin-left:1;		
+			}
+#usuario a.menuitem:visited, .glossymenu .menuitem:active{
+		color: #000000; width:auto;
+		}
+#usuario a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+position: absolute;
+top: 5px;
+right: 5px;
+border: none;
+}
+#usuario a.menuitem:hover{
+background-image: url(../imagenes/monumento1.jpg); width:auto;
+} 
+#usuario  div.submenu{ /*DIV that contains each sub menu*/
+background: white;
+}
+#usuario div.submenu ul{ /*UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+#usuario div.submenu ul li{
+/*border-bottom: 1px solid #804000;
+list-style-image:url(/imagenes/algo.jpg);*/
+}
+#usuario div.submenu ul li a{
+display: block;
+font: normal 13px "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+color: black;
+text-decoration: none;
+padding: 4px 0;
+padding-left: 2px;
+background-image:url(../imagenes/algo.jpg);
+}
+
+
+/*#DFDCCB background-color:#FFFFD2; url(../../img/bg_bronce.png)*/
+#usuario div.submenu ul li a:hover{
+colorz: white;
+    height: auto;
+	width:auto;
+    display:block;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	 -moz-border-radius-bottomright: 5px;
+	  border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	/*border-radius:  10x; -webkit-border-radius: 10px; -moz-border-radius: 10px; text-align:center;*/
+	color: #000000;
+	background-image:url(../imagenes/otro.jpg);
+}
+#demoIzq, #demoDer { border:1px dashed; width:296px; background-color:#EAEAEA; text-align:center; }
+
+#demoDer { float:left; position:relative; }
+
+#lista
+{
+	position:absolute;
+	width:141px;
+	background-color:#EAEAEA; color:#000000;
+	border:1px dotted; border-color:#000000;
+	z-index:1;
+	display:none;
+}
+
+.resaltado
+{
+	background-color:#FFFFFF; color:#000000;
+	cursor:pointer;
+}
+
+.normal
+{
+	background-color:#EAEAEA; color:#000000;
+}

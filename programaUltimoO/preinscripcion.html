@@ -1,0 +1,144 @@
+
+
+<style type="text/css">
+#tooltip {
+	background-color: #CCCCCC;
+	border: 1px solid #888888;
+	color: #333333;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	-moz-border-radius-bottomleft: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 7px;
+	max-width: 20em;
+	line-height: 12px;
+}
+#tooltip h3 {
+	font-size: 1.1em;
+    margin: 0;
+	padding: 0 3px;
+	text-align: left !important;
+}
+#tooltip p {
+	font-size: 0.95em;
+	margin: 5px 0 0 5px;
+	text-align: left;
+}
+</style>
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.tooltip.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+	// modify global settings
+	$.extend($.fn.Tooltip.defaults, {
+		track: true,
+		delay: 0,
+		showURL: false,
+		showBody: " - "
+	});
+	$('a, input, img').Tooltip();
+});
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+function Cancelar(){
+	var confirmar = confirm("Desea Cancelar el Registro?");
+	if(confirmar!=0)
+	this.location.href='preinscripcion.php';
+}
+function borra(form)
+{
+//alert(form.motivo.value);
+  if (form.motivo.value=="Escriba Aqui")
+     form.motivo.value="";
+}
+function validarSiNumero(numero){
+//alert(numero);
+    if (!/^([0-9])*$/.test(numero))
+      alert("El valor de la C.I. no es Numérico");
+	  }
+	  function validarNumero(numero){
+//alert(numero);
+    if (!/^([0-9])*$/.test(numero))
+      alert("El valor del Nro Telefónico no es Numérico");
+	  }
+	   
+				
+</script>
+
+<form name="preinscripcion" method="post" action="preinscripcion1.php">
+<table align="center" width="280" style="margin-left:10;" border="1" bgcolor="#FFFFFF">
+	<tr>
+		<th colspan="2" style="background-image:url(imagenes/Sin_titulo.png);"><font color="#FFFFFF" size="+1">PRE-INSCRIPCIÓN</font>
+		<a href="ayuda1.php"><img src="imagenes/ayuda.png" align="right" height="20px" width="30px" title="Ayuda"></a></th>
+	</tr>
+	<div>
+		<td width="60" ><font>Cédula: </font></td>
+		<td width="198">
+		<select name="cargo">
+        	<option value="">V-</option>
+            <option value="">E-</option>
+            </select>
+			<a title="Google - http://www.google.com"><input name="cedula" type="text"  size="18" maxlength="8" onBlur=validarSiNumero(this.value)></a><font color="red">*</font></td>
+	</div>
+	<tr>
+		<td><font>Nombre: </font></td>
+		<td><input  type="text" name="nombre" maxlength="50" size="25"><font color="red">*</font></td>
+	</tr>
+    <tr>
+		<td><font>Apellido: </font></td>
+		<td><input  type="text" name="apellido" maxlength="50" size="25"><font color="red">*</font></td>
+	</tr>
+	<tr>
+		<td><font>Teléfono: </font></td>
+		<td><input  type="text" name="telefono" maxlength="11" size="25" onBlur=validarNumero(this.value)><font color="red">*</font></td>
+	</tr>
+
+    <tr>
+		<td><font>Curso: </font></td>
+		<td><select name="curso">
+
+  		<option selected value="">---------Cursos---------</option>
+
+        <?php
+require('conexion.php');
+
+		$curso=mysql_query("select * from cursos order by codigocurso");
+		$opcion=mysql_fetch_array($curso);
+				
+		for($i=0;$i<$opcion;$i++) 
+		{
+
+		echo "<option>";
+		echo $opcion['curso'];
+		echo"</option>";
+		$opcion=mysql_fetch_array($curso);
+		}
+	
+
+        ?>
+
+	</select><font color="red">*</font>
+    <input type=button value="Ingresar otro Curso" onClick="window.open('registrocurso.php','miventana','width=300,height=200,menubar=no'); "></td>
+        
+	</tr>
+  
+	
+	<tr>
+		<td colspan="2" align="center"><br>
+		<input type="submit" name="enviar" value="Registrar" onClick="valida_envia5()"/>&nbsp;
+		<input type="reset" name="cancelar" value="Cancelar" onClick="Cancelar()"/>
+		
+		<font color="red"><h6>(*) campos obligatorios<h6></font>
+		<img src="pdf.jpg" width="50" height="50" align="center">
+		<input type=button value="Descargar" onClick="window.open('Busquedadplanilla.php','miventana','width=300,height=200,menubar=no'); ">
+		</td>
+	</tr>
+	
+</table>
+</form>
+
+
